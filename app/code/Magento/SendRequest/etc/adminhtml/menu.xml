@@ -5,7 +5,14 @@
              title="Send HTTP Request"
              module="Magento_SendRequest"
              sortOrder="80"
+             resource="Magento_Backend::content"/>
+
+        <add id="Magento_SendRequest::send"
+             title="Send"
+             module="Magento_SendRequest"
+             sortOrder="0"
              resource="Magento_Backend::content"
-             action="magento_sendrequest/SendRequest"/>
+             parent="Magento_SendRequest::custom_menu"
+             action="magento_sendrequest/sendrequest"/>
     </menu>
 </config>
