@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="Magento_SendRequestt::custom_menu"
+             title="Send HTTP Request"
+             module="Magento_SendRequest"
+             sortOrder="10"
+             parent="Magento_Backend::content"
+             action="Magento_SendRequest/action/sendrequest"/>
+    </menu>
+</config>
