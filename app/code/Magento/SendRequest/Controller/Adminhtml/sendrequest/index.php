@@ -1,6 +1,6 @@
 <?php
 
-namespace Vendor\ModuleName\Controller\Adminhtml\Action;
+namespace Magento\SendRequest\Controller\Adminhtml\sendrequest;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\Controller\ResultFactory;
