@@ -13,6 +13,6 @@
              sortOrder="0"
              resource="Magento_Backend::content"
              parent="Magento_SendRequest::custom_menu"
-             action="magento_sendrequest/sendrequest"/>
+             action="magento_sendrequest/sendrequest/index"/>
     </menu>
 </config>
