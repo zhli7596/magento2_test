@@ -19,6 +19,6 @@ class Index extends \Magento\Backend\App\Action
          }
          protected function _isAllowed()
          {
-                 return $this->_authorization->isAllowed('Bss_CreateMenuBackend::menu');
+                 return $this->_authorization->isAllowed('Magento_SendRequest::menu');
          }
 }
