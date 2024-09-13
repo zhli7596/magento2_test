@@ -11,35 +11,7 @@
 
 <h1>Sending Request to example.com</h1>
 
-<?php
-function sendRequest() {
-    // Initialize cURL session
-    $curl = curl_init();
-
-    // Set cURL options
-    curl_setopt($curl, CURLOPT_URL, "https://example.com"); // URL to send the request to
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true); // Return the response as a string
-    curl_setopt($curl, CURLOPT_HEADER, false); // Do not include headers in the output
-    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // For testing, disable SSL verification (Not recommended for production)
-
-    // Execute cURL request
-    $response = curl_exec($curl);
-
-    // Check if the request was successful
-    if ($response === false) {
-        echo "cURL Error: " . curl_error($curl);
-    } else {
-        echo "Response from example.com:<br>";
-        echo "<pre>" . htmlspecialchars($response) . "</pre>";
-    }
-
-    // Close the cURL session
-    curl_close($curl);
-}
-
-// Send the request when the script is executed
-sendRequest();
-?>
+<?php?>
 
 </body>
 </html>
