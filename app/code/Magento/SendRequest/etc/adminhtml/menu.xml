@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
     <menu>
-        <add id="Magento_SendRequest::custom_menu"
+        <add id="Magento_SendRequest::menu"
              title="Send HTTP Request"
              module="Magento_SendRequest"
              sortOrder="80"
@@ -11,8 +11,8 @@
              title="Send"
              module="Magento_SendRequest"
              sortOrder="0"
-             resource="Magento_Backend::content"
-             parent="Magento_SendRequest::custom_menu"
-             action="magento_sendrequest/sendrequest/index"/>
+             resource="Magento_SendRequest::send"
+             parent="Magento_SendRequest::menu"
+             action="magentosendrequest/sendrequest/index"/>
     </menu>
 </config>

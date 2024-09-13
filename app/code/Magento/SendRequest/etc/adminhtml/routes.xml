@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="magento_sendrequest" frontName="magento_sendrequest">
-            <module name="Magento_SendRequest"/>
+        <route id="magentosendrequest" frontName="magentosendrequest">
+            <module name="Magento_SendRequest" />
         </route>
     </router>
 </config>
