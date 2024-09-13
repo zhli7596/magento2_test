@@ -1,17 +1,28 @@
-<!-- request.phtml -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send cURL Request</title>
+    <title>Dynamic PHP Page</title>
 </head>
 <body>
+    <h1>Welcome to My Dynamic PHP Page</h1>
+    
+    <p>Current Date and Time:</p>
+    <div>
+        <?php
+            // Display the current date and time
+            echo "<p>The current date and time is: " . date('Y-m-d H:i:s') . "</p>";
+            
+            // Generate a random number between 1 and 100
+            $randomNumber = rand(1, 100);
+            echo "<p>Here's a random number for you: $randomNumber</p>";
 
-<h1>Sending Request to example.com</h1>
-
-<?php?>
-
+            // Generate a random greeting
+            $greetings = ["Hello!", "Hi there!", "Welcome!", "Good to see you!"];
+            $randomGreeting = $greetings[array_rand($greetings)];
+            echo "<p>$randomGreeting</p>";
+        ?>
+    </div>
 </body>
 </html>
